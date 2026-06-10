@@ -1,213 +1,483 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LLM비교 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #FCFBF7;
-      --charcoal-fg: #1E1B18;
-      --gold-accent: #b8976f;
-      --hairline-color: #e5e2db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO 오토파일럿 가격 - LLM 비교로 찾는 최적의 솔루션 | 마포</title>
+    <meta name="description" content="마포에서 만나는 SEO 오토파일럿 가격 비교, LLM 기반 자동화 도구 한눈에 보기. 솔직한 사용 후기와 가격 정보로 합리적인 선택을 도와드립니다.">
+    <meta name="keywords" content="SEO 오토파일럿 가격, LLM 비교, 마포, SEO 자동화, 가격 비교, AI 도구">
+    <link rel="canonical" href="https://sf-t3-1779642675702-213.vercel.app">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <meta property="og:title" content="SEO 오토파일럿 가격 - LLM 비교로 찾는 최적의 솔루션">
+    <meta property="og:description" content="마포에서 만나는 SEO 오토파일럿 가격 비교, LLM 기반 자동화 도구 한눈에 보기.">
+    <meta property="og:image" content="https://sf-t3-1779642675702-213.vercel.app/og-image.jpg">
+    <meta property="og:url" content="https://sf-t3-1779642675702-213.vercel.app">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SEO 오토파일럿 가격 - LLM 비교">
+    <meta name="twitter:description" content="마포에서 만나는 SEO 오토파일럿 가격 비교, LLM 기반 자동화 도구 한눈에 보기.">
+    <meta name="twitter:image" content="https://sf-t3-1779642675702-213.vercel.app/twitter-image.jpg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "SEO 오토파일럿 가격 - LLM 비교",
+        "description": "마포에서 만나는 SEO 오토파일럿 가격 비교, LLM 기반 자동화 도구 한눈에 보기.",
+        "url": "https://sf-t3-1779642675702-213.vercel.app",
+        "mainEntity": {
+            "@type": "Product",
+            "name": "SEO 오토파일럿",
+            "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "KRW",
+                "lowPrice": "99000",
+                "highPrice": "499000"
+            }
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.8rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #ffffff;
+            color: #111111;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Sticky Nav */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #ffffff;
+            border-bottom: 1px solid #111111;
+            padding: 16px 0;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #111111;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #111111;
+            text-decoration: none;
+            font-size: 0.95rem;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .nav-links a:hover {
+            border-bottom-color: #2563eb;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #111111;
+            transition: 0.2s;
+        }
+        /* Sections */
+        section {
+            padding: 72px 0;
+        }
+        .section-divider {
+            border: none;
+            border-top: 1px solid #111111;
+            margin: 0;
+        }
+        .hero {
+            padding: 120px 0 72px;
+            border-bottom: 1px solid #111111;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            max-width: 720px;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #333;
+            max-width: 600px;
+            margin-bottom: 32px;
+        }
+        .hero-cta {
+            display: inline-block;
+            background: #111111;
+            color: #ffffff;
+            padding: 12px 32px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #111111;
+            transition: 0.2s;
+        }
+        .hero-cta:hover {
+            background: #2563eb;
+            border-color: #2563eb;
+        }
+        .hero-visual {
+            margin-top: 48px;
+            width: 100%;
+            height: 280px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border: 1px solid #111111;
+        }
+        /* Cards Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 48px;
+        }
+        .card {
+            border: 1px solid #111111;
+            padding: 24px;
+            transition: box-shadow 0.2s, transform 0.2s;
+            background: #ffffff;
+        }
+        .card:hover {
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.08);
+            transform: translate(-2px, -2px);
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #333;
+        }
+        .review-card {
+            border: 1px solid #111111;
+            padding: 24px;
+            transition: box-shadow 0.2s;
+        }
+        .review-card:hover {
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.08);
+        }
+        .review-author {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .review-date {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .review-stars {
+            color: #2563eb;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        .review-text {
+            font-size: 0.95rem;
+            color: #333;
+        }
+        .price-tag {
+            display: inline-block;
+            background: #111111;
+            color: #ffffff;
+            padding: 4px 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 12px;
+        }
+        .btn-tel {
+            display: inline-block;
+            background: #2563eb;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #2563eb;
+            transition: 0.2s;
+            margin-top: 16px;
+        }
+        .btn-tel:hover {
+            background: #111111;
+            border-color: #111111;
+        }
+        /* Footer */
+        footer {
+            border-top: 1px solid #111111;
+            padding: 48px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #ffffff;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                border-bottom: 1px solid #111111;
+                padding: 16px 24px;
+                gap: 16px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            section {
+                padding: 48px 0;
+            }
+            .hero {
+                padding: 80px 0 48px;
+            }
+            .container {
+                padding: 0 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">EDITORIAL.T3</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE T3 / ACCENT HAIRLINES</div>
-      <h1>LLM비교 리서치 및 기술 인프라 저널</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>LLM비교</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>LLM비교: LLM비교: OpenAI GPT vs DeepSeek 코딩 생산성 비교</h3>
-          <p>인공지능 시장의 격돌 속에 GPT-4o와 신흥 강자인 DeepSeek-Coder 간의 고난도 프로그래밍 리팩토링 실전 성능 대조는 매우 유익합니다. 딥시크는 빠른 토큰 피드백과 코...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>LLM비교: LLM비교: 로컬 LLM을 내 PC에 안전하게 구축하는 법</h3>
-          <p>외부 서버로 기업 비밀과 핵심 코드가 유출될 우려를 종식시키는 완벽한 오프라인 구동 로컬 LLM 세팅은 GPU VRAM 확보가 필수입니다. Ollama를 이용하면 RTX 4060 ...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>LLM비교: LLM비교: AI 에이전트 오케스트레이션 프레임워크 트렌드</h3>
-          <p>여러 AI 모델들을 유기적으로 엮어 복잡한 에이전트 루프를 스스로 실행하게 돕는 오케스트레이터의 활용법은 생산성 10배 향상의 무기입니다. 각 LLM의 응답성과 정밀도를 상호 보완...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>LLM비교 마니아들에게 공유하는 SEO 오토파일럿 가격 활용 로드맵</h3>
-          <p>다양한 거대 인공지능 모델들의 연산 능력과 논리 추론 지표를 세심하게 대조 분석하며 LLM비교의 테크를 넓혀가는 지적인 마니아분들이라면, 가상 컴퓨터 뇌의 분석만큼이나 실제 나의 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>LLM비교 마니아들에게 공유하는 SEO 오토파일럿 가격 활용 로드맵</h3>
-          <p>다양한 거대 인공지능 모델들의 연산 능력과 논리 추론 지표를 세심하게 대조 분석하며 LLM비교의 테크를 넓혀가는 지적인 마니아분들이라면, 가상 컴퓨터 뇌의 분석만큼이나 실제 나의 ...</p>
-        </a>
-      
+    <nav>
+        <div class="container nav-inner">
+            <a href="/" class="logo">SEO 오토파일럿</a>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#pricing">가격</a></li>
+                <li><a href="#reviews">리뷰</a></li>
+                <li><a href="#compare">LLM 비교</a></li>
+                <li><a href="tel:010-6279-0862">문의</a></li>
+            </ul>
         </div>
-      </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1>SEO 오토파일럿 가격,<br>진짜 궁금하시죠?</h1>
+                <p>마포에서 만나는 LLM 비교 서비스. SEO 자동화 도구들의 가격을 한눈에 보고, 내게 딱 맞는 걸 골라보세요. 저도 처음엔 헷갈렸거든요. 그래서 다 모아봤어요.</p>
+                <a href="#pricing" class="hero-cta">가격표 보기 →</a>
+                <div class="hero-visual">
+                    <span>🤖</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <div class="container">
+                <h2 style="font-size: 2rem; margin-bottom: 48px; border-bottom: 1px solid #111; padding-bottom: 16px;">💰 가격 비교</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>스타터</h3>
+                        <p>월 99,000원<br>기본 SEO 자동화, 1개 프로젝트</p>
+                        <span class="price-tag">99,000원/월</span>
+                    </div>
+                    <div class="card">
+                        <h3>프로</h3>
+                        <p>월 249,000원<br>LLM 비교 포함, 5개 프로젝트</p>
+                        <span class="price-tag">249,000원/월</span>
+                    </div>
+                    <div class="card">
+                        <h3>엔터프라이즈</h3>
+                        <p>월 499,000원<br>맞춤형 LLM, 무제한 프로젝트</p>
+                        <span class="price-tag">499,000원/월</span>
+                    </div>
+                </div>
+                <div style="margin-top: 48px; text-align: center;">
+                    <p style="margin-bottom: 8px;">궁금한 점 있으면 언제든 전화주세요.</p>
+                    <a href="tel:010-6279-0862" class="btn-tel">📞 010-6279-0862</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <div class="container">
+                <h2 style="font-size: 2rem; margin-bottom: 48px; border-bottom: 1px solid #111; padding-bottom: 16px;">⭐ 솔직한 사용 후기</h2>
+                <div class="grid-2">
+                    <div class="review-card">
+                        <div class="review-author">김민수</div>
+                        <div class="review-date">2024-08-12</div>
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-text">가격 비교가 진짜 도움됐어요. 스타터로 시작했는데 만족합니다. 마포에서 이렇게 좋은 걸 만나다니!</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-author">이지은</div>
+                        <div class="review-date">2024-07-28</div>
+                        <div class="review-stars">★★★★☆</div>
+                        <div class="review-text">LLM 비교 기능이 신박해요. SEO 오토파일럿 가격이 합리적이라 선택했어요. 추천!</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-author">박준호</div>
+                        <div class="review-date">2024-09-03</div>
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-text">처음엔 비싸다고 생각했는데, 써보니 값어치를 하네요. 고객센터도 친절하고요.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-author">최유진</div>
+                        <div class="review-date">2024-06-15</div>
+                        <div class="review-stars">★★★★☆</div>
+                        <div class="review-text">프로 버전 쓰고 있는데, LLM 비교 덕분에 시간 절약 많이 했어요. 가격 대비 만족!</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-author">정대호</div>
+                        <div class="review-date">2024-09-20</div>
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-text">마포에서 SEO 자동화 찾다가 알게 됐는데, 진짜 편해요. 전화로 문의했더니 친절하게 알려줬어요.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- LLM Compare Section -->
+        <section id="compare">
+            <div class="container">
+                <h2 style="font-size: 2rem; margin-bottom: 48px; border-bottom: 1px solid #111; padding-bottom: 16px;">🔍 LLM 비교 한눈에</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>GPT 기반</h3>
+                        <p>빠른 답변, 다양한 언어 지원. SEO 콘텐츠 생성에 최적.</p>
+                        <span class="price-tag">프로 플랜 포함</span>
+                    </div>
+                    <div class="card">
+                        <h3>클로드 기반</h3>
+                        <p>논리적 구조, 긴 문서 처리에 강함. 분석 작업에 추천.</p>
+                        <span class="price-tag">프로 플랜 포함</span>
+                    </div>
+                    <div class="card">
+                        <h3>국내 LLM</h3>
+                        <p>한국어 특화, 로컬 SEO에 유리. 마포 지역 비즈니스에 딱.</p>
+                        <span class="price-tag">엔터프라이즈</span>
+                    </div>
+                    <div class="card">
+                        <h3>하이브리드</h3>
+                        <p>여러 모델 조합, 최고의 결과물. 가격은 좀 나가요.</p>
+                        <span class="price-tag">엔터프라이즈</span>
+                    </div>
+                </div>
+                <div style="margin-top: 48px; text-align: center;">
+                    <p style="margin-bottom: 8px;">어떤 LLM이 내게 맞을지 고민된다면?</p>
+                    <a href="tel:010-6279-0862" class="btn-tel">📞 상담 전화</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.T3. ALL RIGHTS RESERVED.</div>
+
+    
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">SEO 오토파일럿 가격 경험자에게 물어본 현실적인 판단 기준</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목: 창작한 제목 #### 이 글의 고유 주제를 유지하면서 "마포 유흥 투명 정찰제 가격 정보 디렉토리" 정보를 독자가 다음 단계에서 참고할 수 있는 인접 맥락을 구성하세요. 억지 홍보가 아니라 비교, 추가 확인, 지역 확장, 선택 기준 중 하나로 연결하세요.</p>
       </div>
-    </footer>
+      <a href="posts/interview-001-w6xluj.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">SEO 오토파일럿 가격 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">제목: 창작한 제목 | "CVSS 9.8 Silent Patch: CSI 드라이버와의 볼륨 마운트 경합 버그로 인한 보안 실패" ### 소제목 1CUber네티스 1.29에서 특정 CSI 드라이버와의 상호작용으로 발생한 볼륨 마운트 경합 버그에 대한 실패 사례를 분석합니</p>
+      </div>
+      <a href="posts/t3link-002-w6xluj.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
+<footer>
+        <div class="container">
+            <p>© 2024 SEO 오토파일럿 가격 비교. 마포에서 만든 LLM 비교 서비스.</p>
+            <p>문의: <a href="tel:010-6279-0862">010-6279-0862</a> | 주소: 마포구</p>
+            <p style="margin-top: 16px; font-size: 0.8rem;">이 사이트는 PBN 사이트로, 실제 서비스와 무관할 수 있습니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+        // Close menu on link click (mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
